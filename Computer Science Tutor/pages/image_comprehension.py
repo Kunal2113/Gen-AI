@@ -7,7 +7,7 @@ from scipy.io.wavfile import write
 import wave
 import openai
 from openai import OpenAI
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="jgihugr9hjA")
 
 
 

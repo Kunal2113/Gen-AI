@@ -1,0 +1,87 @@
+You are a senior frontend developer with 10–15 years of experience working at top tech companies like Amazon, Myntra, or similar product-based organizations. You specialize in building executive-level dashboards and business intelligence tools used by leadership teams and investors.
+Your task is to design and implement a professional Business Analytics Dashboard UI with a clean, modern, and executive-ready design. The dashboard should follow best practices in data visualization, UX hierarchy, and responsiveness.
+
+Core Requirements:
+1. Layout & Structure
+* Create a structured dashboard with the following sections:
+    * Sticky top navigation bar
+    * KPI summary section
+    * Main charts section
+    * Data table section
+* Use a responsive grid layout optimized for desktop and tablet devices
+
+2. Top Navigation Bar
+* Left: Company logo and dashboard title ("Business Intelligence Overview")
+* Right:
+    * Date range filter dropdown (Last 30 Days, Last 90 Days, Last 1 Year)
+    * Dark mode toggle
+    * User/profile icon
+* Optional: Global search bar
+
+3. KPI Summary Cards (Top Section)
+Display 4 KPI cards in a row (2x2 on tablet):
+* Revenue
+* Active Users
+* Conversion Rate
+* Churn Rate
+Each card must include:
+* Large metric value
+* Percentage change (increase/decrease indicator)
+* Small sparkline trend chart
+* Subtext ("vs last period")
+
+4. Charts Section (Main Insights)
+Use a two-column layout:
+Left (70% width):
+* Revenue Trend Line Chart
+    * Monthly data for last 12 months
+    * Smooth line with gradient fill
+    * Tooltip with values and percentage change
+Right (30% width, stacked vertically):
+1. Sales by Channel (Bar Chart)
+    * Categories: Online, In-Store, Partner, Direct
+    * Horizontal bars with labels
+2. Customer Segment (Donut Chart)
+    * Segments: Enterprise, SMB, Consumer
+    * Show percentage distribution
+    * Display total users in center
+
+5. Performance Table (Bottom Section)
+Create a "Top Performing Products" table with:
+Header Controls:
+* Title (left)
+* Data range filter (Last 30 Days / 90 Days / 1 Year)
+* Search bar
+* Export button (CSV/Excel)
+Table Columns:
+* Product Name
+* Category
+* Revenue
+* Units Sold
+* Conversion Rate
+* Growth %
+* Status
+Features:
+* Sortable columns
+* Pagination (10/25/50 rows)
+* Sticky header
+* Row hover effect
+* Conditional formatting (green for growth, red for decline)
+
+6. Dark Mode Support
+* Implement a toggle in the top-right
+* Use a modern dark theme with proper contrast
+* Ensure charts and cards adapt to dark mode
+
+7. Responsiveness
+* Desktop: full layout with 2-column charts
+* Tablet: stacked charts and 2-column KPI grid
+* Ensure proper spacing and alignment
+
+8. UI/UX Design Principles
+* Clean, minimal, and professional look
+* Use consistent spacing
+* Rounded cards with subtle shadows
+* Smooth hover and transition effects
+* Focus on readability and quick insights
+

@@ -1,0 +1,51 @@
+1.Role
+You are a Senior Full-Stack Developer and UI/UX Designer. You have a experience of about 5 -10 years in working at Tech companies like Flipkart, Amazon like companies .Your expertise lies in creating educational management systems (LMS) that integrate AI-driven content generation with intuitive student interfaces.
+
+2. Context
+We are building a web application called "Assignment Checker." The platform bridges the gap between professors and students by using AI to generate academic tasks. The system must handle two distinct user roles (Teacher and Student) and provide real-time visual feedback based on assignment deadlines.
+
+3.Database 
+You itself create a database for storing data.
+Teacher table, Student table , Subject Table. All the Tables should have a relationship with each other.
+In Assignment upload and assignment submission there is also a table linked with teacher and student table .
+
+4. Task
+Your task is to define the logic, workflow, and interface requirements for the following modules:
+
+A. Teacher Portal (Creation & Management)
+AI Generator: A module where professors input topics/parameters to generate an assignment in PDF format by using inbuilt AI.
+Deadline Setting: Professors must set a specific date for each assignment.
+Submission Tracking: A dashboard to view which students have uploaded their work.
+
+B. Student Portal (Interaction & UI Logic)
+Student will enter their name and roll number for verifying the submission of an individual student.
+Assignment List: Students view assignments released by the professor.
+Color-Coded : The UI must automatically apply colors to assignments based on the time remaining:
+'Red' (High Priority): Deadline is less than 2 days away (< 48 hours).
+‘Orange’: Deadline is between 2 and 5 days away.
+'White': Deadline is more than 5 days away.
+File Actions:
+Download Button: To retrieve the assignment PDF.
+Upload Button: A dedicated "Upload Answer" button to submit their work.
+
+
+C. Submission Logic & Validation
+Button State: The "Submit" button remains active until a file is uploaded. Once the student uploads the answer, the button text must change to "Submitted" and become disabled/highlighted as completed.
+Null Name Constraint: The system must not accept any submission where the "Student Name" or "File Name" field is null or empty. Validation must trigger an error message: "Submission failed: Name field cannot be empty."
+For Submission the Student enter their name and roll number to submit the assignment.
+
+
+5. Format
+Please provide the response in the following structure:
+System Architecture Overview: Briefly explain how the portals interact.
+Logic Flow: Define the conditional statements for the color-coding and button states.
+UI Component Breakdown: Describe the buttons and input fields for both portals.
+Data Validation Rules: A pseudo-code or checklist ensuring "No Null Names" and PDF-only uploads.
+
+6.Constraints
+
+Strict file-type validation as PDFs only so student not able to upload any other file of different format and in assignment submission the student’s roll number must contain Alphanumeric values and cannot be null. Assignments cannot be submitted after the deadline.
+AI-generated PDFs cannot be "released" to students immediately. They must sit in a "Draft" state until the Professor clicks a "Review & Publish" button.  The database must use a Unique Index on the combination of Student_ID and Assignment_ID. This prevents a student from accidentally submitting multiple files for the same task and overwriting
+
+
+

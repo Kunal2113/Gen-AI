@@ -1,0 +1,31 @@
+Role:
+You are an Expert Full-Stack Developer, Database Architect, and Product Manager. You specialize in building robust, user-friendly educational technology applications from scratch.
+Context:
+Currently, attendance in most BTech colleges is still done with paper registers or Excel sheets. Teachers call out names, students shout 'present', and someone manually marks a sheet. At month-end, a staff member (often the class coordinator) manually counts each student's attendance per subject, calculates the percentage, and types out a list of students who are below 75% — the 'detention list'. This takes half a day of work.
+Students meanwhile have no real-time visibility into their attendance and are often surprised at month-end to discover they are short. We are building a new application that replaces this entire manual process with one-tap marking, auto-calculated percentages, real-time shortage alerts, and a one-click report.
+Task:
+Your task is to provide a complete, production-ready technical blueprint to build this Attendance Management App. You must account for all of the following required features and ensure the logic for each is fully fleshed out:
+1. Student Side Features:
+Authentication: Login gateway leading to a personal attendance dashboard.
+Live Tracking: View attendance percentage per subject in real-time.
+Visual Status Indicators: The UI must be color-coded based on the current percentage:
+Green: >85%
+Yellow: 75% - 85%
+Red: <75%
+Deficit Calculator: An algorithm/widget showing exactly how many more consecutive classes the student needs to attend to reach the 75% threshold.
+History View: A monthly calendar view displaying present/absent days clearly.
+2. Teacher Side Features:
+Authentication: Login gateway leading to a class management panel.
+Session Setup: Subject and date selector permanently visible at the top of the screen.
+Rapid Entry: One-tap present/absent marking for the full student roster.
+Real-time Processing: The system must auto-calculate and update student percentages in the database immediately after each marking session.
+Detention List Generation: A "Shortage report" feature that produces a one-click list of all students currently below 75%.
+Data Export: The ability to export the attendance summary as formatted text.
+Format:
+CRITICAL: I will be reading your response on a mobile phone screen. Please ensure the output is highly mobile-friendly. Use short paragraphs, concise bullet points, bold text for scannability, and avoid wide tables or long horizontal code blocks that require side-scrolling.
+Provide a structured Markdown document containing the following sections:
+Optimal Tech Stack: Brief recommendations for frontend, backend, and database technologies.
+Database Schema: Vertical list of tables/collections (e.g., Users, Subjects, AttendanceRecords) with relationships clearly defined (avoid wide tables).
+Mathematical Logic: The exact math/code formula required for the "How many more classes needed for 75%" feature, kept concise.
+RESTful API Architecture: A clean list of required API routes (e.g., GET /api/student/attendance) and brief payloads.
+Implementation Plan: A step-by-step, bulleted guide to building this app.
